@@ -13,12 +13,20 @@
   </head>
 
   <body>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-      crossorigin="anonymous"
-    ></script>
+    <script>
+      function heloo() {
+        document.getElementById("uul").style.display = "flex";
+      }
 
+      function heloe() {
+        document.getElementById("hhll").setAttribute("class", "active");
+      }
+    </script>
+    <script
+      src="css\js\main.js"
+      language="JavaScript"
+      type="text/javascript"
+    ></script>
     <header>
       <div class="container">
         <img
@@ -26,11 +34,16 @@
           src="images\269973959_296176129217774_47191391606934417_n.jpg"
           alt=""
         />
+
         <nav>
-          <i class="fas fa-bars toggele-menu"></i>
-          <ul>
+          <div class="toggele-menu" onclick="heloo()" id="toggele">
+            <i class="fas fa-bars"></i>
+          </div>
+          <ul id="uul">
             <li><a href="#services" class="active">عن البلدية</a></li>
-            <li><a href="#portfolio">مدينة البيرة</a></li>
+            <li onclick="heloe()">
+              <a href="#portfolio" id="hhll">مدينة البيرة</a>
+            </li>
             <li><a href="#about">مرافق البلدية</a></li>
             <li><a href="#contact">نشاطات البلدية</a></li>
             <li><a href="#contact">وحدة التنمية</a></li>
@@ -46,90 +59,99 @@
     </header>
     <!-- End Header -->
     <!-- start landing Section -->
+
     <div class="landing">
       <div class="overlay"></div>
       <div class="text">
         <div class="contant">
-          <h2>مرحبا</h2>
-          <p>بلدية البيرة</p>
+          <h2>بلدية البيرة</h2>
+          <p>
+            البلدية مؤسسة أهلية ذات استقلال مالي تحدث وتلغي وتعين حدد منطقتها
+            ووظائفها وسلطتها بمقتضى أحكام القانون، ويتولى إدارة البلدي...ة مجلس
+            بلدي ينتخب أعضاءه انتخاباً مباشراً أو يعينون حسب أحكام القانون
+          </p>
         </div>
       </div>
+
       <i class="fas fa-angle-left change-background fa-2x"></i>
       <i class="fas fa-angle-right change-background fa-2x"></i>
-      <ul class="bullets" >
+      <ul class="bullets">
         <li></li>
         <li class="active"></li>
         <li></li>
       </ul>
     </div>
 
-
-
-
     <!-- End landing Section -->
     <!-- Start Services -->
     <div class="services">
-        <div class="container">
-          <div class="main-heading">
-            <h2>Services</h2>
-            <p>
-              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
-              tincidunt.
-            </p>
+      <div class="container">
+        <div class="main-heading">
+          <h2>خدمات البلدية</h2>
+          <!-- <p>
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+            Mauris blandit aliquet elit, eget tincidunt.
+          </p> -->
+        </div>
+        <div class="services-container">
+          <div class="srv-box">
+            <a href="">
+              <i class="fa-solid fa-laptop-code fa-3x"></i>
+              <div class="text">
+                <h3>الخدمات الالكترونية</h3>
+                <p>
+                  تم حوسبة كافة خدمات الجمهور لتصبح متاحة للمواطن وذلك تسهيلا على
+                  المواطن ليصبح بامكانه تعبئة وتسليم طلبه للبلدية الكترونيا.
+                </p>
+              </div>
+            </a>
           </div>
-          <div class="services-container">
-            <div class="srv-box">
-              <i class="fas fa-desktop fa-3x"></i>
+          <div class="srv-box">
+            <a href="">
+              <i class="fa-solid fa-map-location-dot"></i>
               <div class="text">
-                <h3>Vorem amet intuitive</h3>
+                <h3>نظم المعلومات الجغرافية</h3>
                 <p>
-                  Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
-                  tincidunt nibh pulvinar a. Curabitur aliquet quam.
+                  الخارطة السياحية التفاعلية.
+                  <br />
+                  متصفح البلدية لخرائط المدينة.
+                  <br />
+                  رام الله عبر التاريخ (1967 - 2018).
                 </p>
               </div>
-            </div>
-            <div class="srv-box">
-              <i class="fas fa-cog fa-3x"></i>
+            </a>
+          </div>
+          <div class="srv-box">
+            <a href="">
+              <i class="fa-solid fa-headset"></i>
               <div class="text">
-                <h3>Vorem amet intuitive</h3>
+                <h3>خدمات الجمهور</h3>
                 <p>
-                  Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
-                  tincidunt nibh pulvinar a. Curabitur aliquet quam.
+                  تقديم أفضل الخدمات بشفافية وبأقل وقت ممكن ولجميع المواطنين
+                  يدوياً والكترونياً وفق ودليل خدمات واجراءات واضحةبكافة الطرق
+                  المتاحة
                 </p>
               </div>
-            </div>
-            <div class="srv-box">
-              <i class="fas fa-pencil-ruler fa-3x"></i>
+            </a>
+          </div>
+
+          <div class="srv-box">
+            <a href="">
+              <i class="fa-solid fa-pen-to-square"></i>
               <div class="text">
-                <h3>Vorem amet intuitive</h3>
+                <h3>الشكاوي والإقتراحات</h3>
                 <p>
-                  Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
-                  tincidunt nibh pulvinar a. Curabitur aliquet quam.
+                  حرصا من البلدية على تقديم خدمات بلدية بافضل الطرق,
+                  استحدثت بلدية البيرة هذه الشعبة من أجل ضمان متابعة حل المشكلات بطريقة
+                  مهنية وشفافة
                 </p>
               </div>
-            </div>
-            <div class="srv-box">
-              <i class="fas fa-camera fa-3x"></i>
-              <div class="text">
-                <h3>Vorem amet intuitive</h3>
-                <p>
-                  Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
-                  tincidunt nibh pulvinar a. Curabitur aliquet quam.
-                </p>
-              </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
-      <!-- End Services -->
-
-
-
-
-
-
-
-
+    </div>
+    <!-- End Services -->
 
     <!-- start featues -->
     <!-- <div class="featuers">
