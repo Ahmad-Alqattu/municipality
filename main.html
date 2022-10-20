@@ -13,22 +13,8 @@
   </head>
 
   <body>
-    <script>
-      function heloo() {
-        document.getElementById("uul").style.display = "flex";
-      }
-
-      function heloe() {
-        document.getElementById("hhll").setAttribute("class", "active");
-      }
-    </script>
-    <script
-      src="css\js\main.js"
-      language="JavaScript"
-      type="text/javascript"
-    ></script>
     <header>
-      <button id="btn"><i class="fa-solid fa-up-long "></i></button>
+      <button id="btn"><i class="fa-solid fa-up-long"></i></button>
       <div class="container">
         <img
           class="logo"
@@ -37,12 +23,12 @@
         />
 
         <nav>
-          <div class="toggele-menu" onclick="heloe()" id="toggele">
+          <div class="toggele-menu active" onclick="heloe()" id="toggele">
             <i class="fas fa-bars"></i>
           </div>
           <ul id="uul">
             <li><a href="#services" class="active">عن البلدية</a></li>
-            <li>
+            <li onclick="">
               <a href="#portfolio" id="hhll">مدينة البيرة</a>
             </li>
             <li><a href="#about">مرافق البلدية</a></li>
@@ -59,22 +45,6 @@
       </div>
     </header>
     <!-- End Header -->
-    <script>
-      function heloo() {
-        document.getElementById("uul").style.display = "flex";
-      }
-
-      function heloe() {
-        document
-          .getElementById("uul")
-          .getElementsByTagName("li")
-          .getElements.setAttribute("class", "active");
-        console.log(
-          document.getElementById("uul").getElementsByTagName("li").getElements
-        );
-      }
-      heloe();
-    </script>
     <!-- start landing Section -->
     <script
       src="css\js\main.js"
@@ -299,11 +269,6 @@
         </div>
       </div>
     </div>
-    <script
-      src="css\js\main.js"
-      language="JavaScript"
-      type="text/javascript"
-    ></script>
     <!-- End Features -->
     <!-- End Portfolio -->
 
