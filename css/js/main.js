@@ -1,4 +1,4 @@
-$("#hhll").click(function () {
-    $("#hhll").addClass("active");
+$("heloe").click(function () {
+    $("#hhll").set;
   });
   console.log("dafs");
